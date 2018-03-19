@@ -23,3 +23,24 @@ CREATE TABLE Reservation(
     what_date date,
     what_time time 
 );
+
+CREATE TABLE food_items(
+    food_id SERIAL primary key,
+    item_name text,
+    item_description text,
+    item_price numeric
+)
+
+CREATE TABLE Antree_special(
+    food_id SERIAL primary key,
+    item_name text,
+    item_description text,
+    item_price numeric
+)
+
+CREATE TABLE Appetizer_special(
+    food_id SERIAL primary key,
+    item_name text,
+    item_description text,
+    item_price numeric
+)
